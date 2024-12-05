@@ -1,0 +1,12 @@
+ALGORITHM calcul
+
+VAR
+    num1, num2, sum : INTEGER,
+BEGIN
+    write("enter the first number"),// read the first.number
+    read(num1),// read the first.number
+    write("enter second number:"), //enter second number
+    read(num2), // read the secound number
+    sum = num1 + num2;
+    write(sum), //display the sum of the two number
+END

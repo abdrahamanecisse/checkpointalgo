@@ -1,0 +1,28 @@
+ALGORITHM sentence-counters
+
+VAR
+    sentence : STRING -"the best in world"
+    CHAR_counters : INTEGER =0
+    word_counter : INTEGER =1
+    vowels_counter : INTEGER = 0
+    vowels :  : ARRAY_OF char = [ "a","e","i","o","u","A","E","I","O","U",]
+BEGIN
+//comment
+    FOR ( VAR i:INTEGER-0; i < sentence.length(); i++) DO 
+        CHAR_counters-CHAR_counters + 1
+    END_FOR
+
+
+
+//counts the number of words in the sentence
+FOR ( VAR i:INTEGER-0; i < sentence.length(); i++)  DO
+   IF (sentence[i] in vowels= " ") THEN
+   vowels_counter=vowels_counter + 1
+    
+   END_IF word_counter
+END_FOR
+
+
+    //wrte the results
+    wrte("the length of the sentence is:", char_counter)
+END
